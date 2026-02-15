@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../CSCI313"
+		},
+		{
+			"path": "../Randomizer"
+		},
+		{
+			"path": "../HTML-Exercise"
+		},
+		{
+			"path": "../practice_DOM"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Assignment 2"
+	}
+}
