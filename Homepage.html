@@ -11,38 +11,30 @@
     </style>
 </head>
 <body> 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Eddie's Website</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#Homepage">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About Me">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Portfolio">Portfolio / Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contact">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  <section class="#Homepage">
-  <header class = "bg-primary text-white text-center py-5"></header>
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <a class="navbar-brand" href="#">Eddie's Website</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#Homepage">Homepage </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#About-Me">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  <section id="#Homepage">
+  <header class = "bg-dark text-white text-center py-5"></header>
   <div class="container"> 
   <div class="w-50 mx-auto bg-light p-4 text-center">
       <h1>Eddie's Website</h1>
@@ -73,7 +65,7 @@
       </div>
     </div>
 </section>
-<section class="#About Me">
+<section id="#About-Me">
 <header></header>
 <div class="container"> <!--Centers the Div :D-->
   <div class="w-50 mx-auto bg-light p-4 text-center">
@@ -112,7 +104,10 @@
     voluptatum ut accusantium officia.
   </p>
 </div>
-<div class = "col-md-4">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class = "text-center">
 <h3>
   Interests & Hobbies
 </h3>
@@ -123,7 +118,9 @@
   <li class="Hobby">Circuit Projects</li>
 </ol>
 </div>
-<div class="col-md-4">
+    </div>
+    <div class="carousel-item">
+      <div class="text-center">
 <H3>
   Favorite Books / Movies
 </H3>
@@ -135,18 +132,29 @@
     <li class= "Book">The Shadow over Innsmouth (Book)</li>
   </ul>
 </div>
-<div class="col-md-4">
+    </div>
+    <div class="carousel-item">
+      <div class="text-center">
 <h3>
   Favorite Sites
 </h3>
 <ul>
   <li><a class="Steam" href="https://store.steampowered.com/">Steam Page</a></li>
-  <li><a class="Spotify" href="Spotify.Com">Spotify</a></li>
-  <li><a class="Youtube" href="youtube.com">Youtube</a></li>
+  <li><a class="Spotify" href="https://Spotify.Com">Spotify</a></li>
+  <li><a class="Youtube" href="https://youtube.com">Youtube</a></li>
   <li><a class="FireFox" href="https://www.firefox.com/en-US/browsers/desktop/windows/">Firefox Browser Install</a></li>
 </ul>
 </div>
-</div>
+    </div>
+  </div>
+  <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 <div class="container my-5">
     <h2 class="text-center mb-4">Weekly Schedule</h2>
@@ -202,7 +210,7 @@
 </div>
 
 </section>
-<section class="Portfolio">
+<section id="Portfolio">
 <div class="container">
   <div class="w-50 mx-auto bg-light p-4 text-center">
     <h2>Portfolio</h2>
@@ -243,31 +251,34 @@
 </div>
 </div>
 </section>
-<section class="container my-5" id="contact">
-      <h2 class="text-center">Contact Us</h2>
+<section class="container-fluid my-5 cmdbg" id="Contact"> <!--BEHOLD! MY ATTEMPT AT A CMD TERMINAL LOOKING MENU-->
+  <div class="cmdpt">
+      <h2 class="text-center cmdhd">Contact Us</h2>
       <form>
-        <div class="mb-3">
+        <div class="mb-3 cmdhd">
           <label for="name" class="form-label">Name</label>
           <input type="text" class="form-control" id="name" required />
         </div>
-        <div class="mb-3">
+        <div class="mb-3 cmdhd">
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" id="email" required />
         </div>
-        <div class="mb-3">
+        <div class="mb-3 cmdhd">
           <label for="message" class="form-label">Message</label>
           <textarea
-            class="form-control"
+            class="form-control cmdhd"
             id="message"
             rows="3"
             required
           ></textarea>
         </div>
-        <button type="submit" class="btn btn-primary"data-toggle="modal" data-target="#exampleModal" >Submit</button>
+        <button type="submit" class="btn btn-danger"data-toggle="modal" data-target="#exampleModal" >Submit</button>
       </form>
+    </div>
     </section>
-    <footer class="End">
+    <footer class="End bg-secondary">
     &copy; 2026, Eddie's Site, All Rights Reserved [Insert More Legal Jargin Here]
     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
