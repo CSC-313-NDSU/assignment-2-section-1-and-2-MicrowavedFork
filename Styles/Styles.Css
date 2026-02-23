@@ -1,0 +1,66 @@
+.Book {
+    color:darkred
+}
+.Movie {
+    color:forestgreen
+}
+.Youtube{
+    color:red
+}
+.Spotify{
+    color:limegreen
+}
+.Steam{
+    color:midnightblue;
+}
+.FireFox{
+    color:orangered;
+}
+.Hobby{
+    color:maroon;
+}
+
+.w-100{
+    border-radius: 10px;
+    border-color: black;
+}
+
+ul,ol {
+    list-style-type: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.cmdbg{
+    background-color: rgb(0,0,0);
+}
+
+.cmdpt{
+        top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.cmdhd{
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: white
+}
